@@ -22,7 +22,7 @@ console.log(job);
 
 
 // Variable mutation and type coercion
-var firstName= 'John';
+var firstName = 'John';
 var age = 28;
 console.log(firstName + ' ' + age);
 
@@ -79,7 +79,7 @@ console.log(typeof 'Mark is older tha John');
 var x;
 console.log(typeof x);
 
- 
+
 //Operator precedence
 var now = 2018;
 var yearJohn = 1989;
@@ -129,95 +129,83 @@ var firstName = 'John';
 var civilStatus = 'single';
 
 if (civilStatus === 'married') {
-   console.log(firstName + ' is married '); 
-}else{
+    console.log(firstName + ' is married ');
+} else {
     console.log(firstName + ' boy dont need no gurl:)');
 }
 
 var isMarried = true;
 if (isMarried) {
-    console.log(firstName + ' is married '); 
- }else{
-     console.log(firstName + ' boy dont need no gurl:)');
- }
+    console.log(firstName + ' is married ');
+} else {
+    console.log(firstName + ' boy dont need no gurl:)');
+}
 
 
 
 
- var massMark = 78; // kg
- var heightMark = 1.69; // meters
- 
- var massJohn = 92;
- var heightJohn = 1.95;
- 
- var BMIMark = massMark / (heightMark * heightMark);
- var BMIJohn = massJohn / (heightJohn * heightJohn);
- 
- if (BMIMark > BMIJohn) {
-     console.log('Mark\'s BMI is higher than John\'s.');
- } else {
-     console.log('John\'s BMI is higher than Marks\'s.');
- }
+var massMark = 78; // kg
+var heightMark = 1.69; // meters
+
+var massJohn = 92;
+var heightJohn = 1.95;
+
+var BMIMark = massMark / (heightMark * heightMark);
+var BMIJohn = massJohn / (heightJohn * heightJohn);
+
+if (BMIMark > BMIJohn) {
+    console.log('Mark\'s BMI is higher than John\'s.');
+} else {
+    console.log('John\'s BMI is higher than Marks\'s.');
+}
 
 
+//Boolean logic
 
-
-
-/*****************************
-* Boolean logic
-*/
-/*
 var firstName = 'John';
-var age = 20;
+var age = 16;
 
 if (age < 13) {
     console.log(firstName + ' is a boy.');
-} else if (age >= 13 && age < 20) {
+} else if (age >= 13 && age < 20)  {
     console.log(firstName + ' is a teenager.');
-} else if (age >= 20 && age < 30) {
-    console.log(firstName + ' is a young man.');
+
 } else {
     console.log(firstName + ' is a man.');
 }
-*/
 
 
 
-/*****************************
-* The Ternary Operator and Switch Statements
-*/
-/*
+//The Ternary Operator and Switch Statements
 var firstName = 'John';
-var age = 14;
+var age = 16;
 
-// Ternary operator
-age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
+age >= 18 ? console.log(firstName + 'drinks beer ')
+: console.log(firstName + ' drinks juice ');
+
 
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
-(if (age >= 18) {
-    var drink = 'beer';
-} else {
-    var drink = 'juice';
-}
+
 
 // Switch statement
-var job = 'instructor';
+var job = 'teacher';
 switch (job) {
     case 'teacher':
-    case 'instructor':
-        console.log(firstName + ' teaches kids how to code.');
+        console.log(firstName + ' teaches kids how to code');
         break;
-    case 'driver':
-        console.log(firstName + ' drives an uber in Lisbon.');
-        break;
-    case 'designer':
-        console.log(firstName + ' designs beautiful websites.');
-        break;
-    default:
-        console.log(firstName + ' does something else.');
+        case driver:
+            console.log(firstName + '  drives an uber');
+            break;
+            case 'designer':
+                console.log('designs websites');
+                break;
+                default:
+                    console.log('does something else');
+
 }
+
 
 age = 56;
 switch (true) {
@@ -233,7 +221,7 @@ switch (true) {
     default:
         console.log(firstName + ' is a man.');
 }
-*/
+
 
 
 
@@ -323,13 +311,13 @@ console.log(ageJohn, ageMike, ageJane);
 function yearsUntilRetirement(year, firstName) {
     var age = calculateAge(year);
     var retirement = 65 - age;
-    
+
     if (retirement > 0) {
         console.log(firstName + ' retires in ' + retirement + ' years.');
     } else {
         console.log(firstName + ' is already retired.')
     }
-    
+
 }
 
 yearsUntilRetirement(1990, 'John');
@@ -634,12 +622,12 @@ var john = {
     calcTips: function() {
         this.tips = [];
         this.finalValues = [];
-                
+
         for (var i = 0; i < this.bills.length; i++) {
             // Determine percentage based on tipping rules
             var percentage;
             var bill = this.bills[i];
-            
+
             if (bill < 50) {
                 percentage = .2;
             } else if (bill >= 50 && bill < 200) {
@@ -647,7 +635,7 @@ var john = {
             } else {
                 percentage = .1;
             }
-            
+
             // Add results to the corresponing arrays
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + bill * percentage;
@@ -661,12 +649,12 @@ var mark = {
     calcTips: function() {
         this.tips = [];
         this.finalValues = [];
-                
+
         for (var i = 0; i < this.bills.length; i++) {
             // Determine percentage based on tipping rules
             var percentage;
             var bill = this.bills[i];
-            
+
             if (bill < 100) {
                 percentage = .2;
             } else if (bill >= 100 && bill < 300) {
@@ -674,7 +662,7 @@ var mark = {
             } else {
                 percentage = .25;
             }
-            
+
             // Add results to the corresponing arrays
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + bill * percentage;

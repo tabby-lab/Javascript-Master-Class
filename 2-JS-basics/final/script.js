@@ -38,22 +38,21 @@ job = 'driver';
 
 alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 
-var lastName = prompt('What is his last Name?');
-console.log(firstName + ' ' + lastName);
+// var lastName = prompt('What is his last Name?');
+// console.log(firstName + ' ' + lastName);
 
 
+//Basic operators
+//math operators
+var yearJohn = 2018 - 28;
+console.log(yearJohn);
 
 
-/*****************************
-* Basic operators
-*/
-/*
 var year, yearJohn, yearMark;
 now = 2018;
 ageJohn = 28;
 ageMark = 33;
 
-// Math operators
 yearJohn = now - ageJohn;
 yeahMark = now - ageMark;
 
@@ -63,7 +62,7 @@ console.log(now + 2);
 console.log(now * 2);
 console.log(now / 10);
 
-
+/*
 // Logical operators
 var johnOlder = ageJohn < ageMark;
 console.log(johnOlder);

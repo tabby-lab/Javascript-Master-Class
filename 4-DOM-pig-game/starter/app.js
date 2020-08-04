@@ -18,25 +18,32 @@ activePlayer = 1;
 // dice = Math.floor(Math.random() * 6) +1;
 
 
-document.querySelector('#current-' + activePlayer).textContent = dice;
+//document.querySelector('#current-' + activePlayer).textContent = dice;
 
-var x = document.querySelector('#score-0').textContent;
-console.log(x);
+//var x = document.querySelector('#score-0').textContent;
+//console.log(x);
 
 document.querySelector('.dice').style.display = 'none';
+
+document.getElementById('score-0').textContent ='0';
+document.getElementById('score-1').textContent ='0';
+document.getElementById('current-0').textContent ='0';
+document.getElementById('current-1').textContent ='0'
 
 function btn() {
 //do something here 
 }
 btn();
 
-document.querySelector('.btn-row').addEventListener('click', function(){
+document.querySelector('.btn-roll').addEventListener('click', function() {
     //1.random number
     var dice = Math.floor(Math.random() * 6) +1;
 
     //2.display result
-    document.querySelector('.dice').style.display = 'block';
-    
+    var diceDOM = document.querySelector('.dice')
+    diceDOM.style.display = 'block';
+    diceDOM.src = 'dice-' + dice + '.png'
+
 
     //3.update the round score IF rolled number was not a 1
 } );
